@@ -1,0 +1,68 @@
+
+GIT is basically a version control tool while github is a web based hosting website.
+
+GIT commands
+
+1. git init
+to initialise a git repository for a new or existing project
+
+2. git add <file_name>
+to add one or more files to staging(index)
+
+3. git status
+list files you've changed and those you still need to add or commit:
+
+4. git commit -m "commit message"
+commit chanes to head
+
+(git commit -am "message"
+to add to staging area and commit with message together
+
+5. git rm --cached <file_name>
+to remove files from staging area
+
+6. git branch <branch_name>
+to create new branch with branch_name
+
+7. git checkout <branch_name>
+to switch from current branch to another
+
+8. git merge <branch_name>
+to merge branch into current branch, for this you need to be in the current branch
+
+
+GITHUB commands
+echo "#GitLearningRepo" >> README.md
+git init 
+git add README.md
+git commit -m "first commit"
+
+
+9. git remote add origin https://github.com/goswamigari/GitLearningRepo.git
+to push an existing repository from the command line
+
+10. git remote -v
+to check how many remote repositories are present
+it shows which repositories to fetch and which ones to push to 
+
+11. git push -u origin master
+master is the name of the git branch that was pulled to github
+
+another one is the main branch (in the github profile)
+
+12.  git push origin dev
+
+workflow:
+(git add---> git commit -->git push
+     git merge              git fetch
+<-----------------------<--------------
+               git pull
+<---------------------------------------
+for merging changes in the remote github repo-->
+first create pull request and then merge to the branch on github
+but on the local repo on my machine you can execute 
+"git merge <branch_name>" command
+
+13. git pull
+for pulling the changes that are in the remote repo to my local repo
+
