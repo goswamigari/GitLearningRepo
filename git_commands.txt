@@ -25,17 +25,15 @@ to remove files from staging area
 to create new branch with branch_name
 
 7. git checkout <branch_name>
-to switch from current branch to another
+to switch from current branch to another <branch_name>
 
 8. git merge <branch_name>
-to merge branch into current branch, for this you need to be in the current branch
+to merge branch into current branch_name, 
+for this you need to be in the current branch
 
 
-GITHUB commands
+--------------GITHUB commands--------
 echo "#GitLearningRepo" >> README.md
-git init 
-git add README.md
-git commit -m "first commit"
 
 
 9. git remote add origin https://github.com/goswamigari/GitLearningRepo.git
@@ -69,6 +67,28 @@ for pulling the changes that are in the remote repo to my local repo
 14. create .gitignore folder--> here it saves the files that are ignored from git commands from staging and it is not pushed to the github repo/merged, etc.
 
 15. git add .
-to add all the files with all the changes made, you wont have to add them individually
+to add all the files with all the changes made to the staging area, you wont have to add them individually
+
+16. for master branch you can use--> 'git push' and 'git pull' directly but for dev branches you will have to specify 'git push origin <branch_name>
+and if you want to directly use 'git push' and 'git pull' here, you will need to specify 'git push --set-upstream origin dev'
+
+17.'Forking'--> you can use, forking with other public repo--> to copy a remote repo in your own github repo and then you can clone/download that repo through 
+git clone <github_repo_https_name>
+
+18. 'rebase' command with git--> For rewinding head to replay your work on top of it.(master branch changes are placed below: unicorn branch changes"
+lets say, there are two branches: master and unicorns.
+All changes in unicorns branch will be placed above and all the changes from the master branch will be placed below the unicorns branch and head will be on top of unicorns branch
+For this, do following:
+>>gitcheckout unicorns
+>>git rebase master
+
+19. using rebase--> if we want to alter the order of the commits in the same branch.
+>> git rebase -i HEAD~3
+here a rebase editor will be popped up
+and the last 3 logs will be shown in the rebase editor, in this editor we can shuffle/alter the commands
+
+20. 
 
 
+20. git log --oneline 
+shows changes of all the 
