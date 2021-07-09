@@ -88,6 +88,4 @@ here a rebase editor will be popped up
 and the last 3 logs will be shown in the rebase editor, in this editor we can shuffle/alter the commands
 
 20. git log --oneline 
-shows changes of all the 
-
-21. 
+shows logs one by one
