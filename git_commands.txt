@@ -66,3 +66,9 @@ but on the local repo on my machine you can execute
 13. git pull
 for pulling the changes that are in the remote repo to my local repo
 
+14. create .gitignore folder--> here it saves the files that are ignored from git commands from staging and it is not pushed to the github repo/merged, etc.
+
+15. git add .
+to add all the files with all the changes made, you wont have to add them individually
+
+
